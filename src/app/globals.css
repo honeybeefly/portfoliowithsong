@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+:root {
+  --background: #211915;
+  --foreground: #f2e7d2;
+  --warm-panel: #30241d;
+  --warm-gold: #d5a45f;
+  --warm-orange: #ba7142;
+  --warm-cream: #f2e7d2;
+  --warm-muted: #c3ae91;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.011em;
+}
+
+:focus-visible {
+  outline: 3px solid #e8c486;
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: #e8c486;
+  color: #302016;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #211915;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9e6d42;
+  border: 2px solid #211915;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d5a45f;
+}
+
+.font-orbitron {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  letter-spacing: 0.015em;
+}
+
+.warm-texture {
+  background-image: radial-gradient(rgba(217, 171, 106, 0.035) 0.6px, transparent 0.6px);
+  background-size: 32px 32px;
+}
+
+.scanlines-overlay {
+  background: transparent;
+}
+
+.vertical-chinese {
+  writing-mode: vertical-rl;
+}
+
+.flicker-neon {
+  animation: none;
+}
+
+.neon-text-cyan,
+.neon-text-magenta,
+.neon-text-amber {
+  color: #f2dfbd;
+  text-shadow: none;
+}
+
+.warm-theme [class*="bg-[#05070f]"],
+.warm-theme [class*="bg-[#030612]"],
+.warm-theme [class*="bg-[#050814]"] {
+  background-color: #211915 !important;
+}
+
+.warm-theme [class*="bg-[#090e21]"],
+.warm-theme [class*="bg-[#080d1e]"],
+.warm-theme [class*="bg-[#070d1e]"],
+.warm-theme [class*="bg-[#060914]"],
+.warm-theme [class*="bg-[#0b1329]"],
+.warm-theme [class*="bg-[#0b142c]"],
+.warm-theme [class*="bg-[#111e42]"],
+.warm-theme [class*="bg-[#0d1633]"],
+.warm-theme [class*="bg-[#120f2b]"] {
+  background-color: #30241d !important;
+}
+
+.warm-theme [class*="text-cyan-"],
+.warm-theme [class*="text-pink-"],
+.warm-theme [class*="text-purple-"],
+.warm-theme [class*="text-emerald-"],
+.warm-theme [class*="text-red-"],
+.warm-theme [class*="text-amber-"] {
+  color: #e5ba79 !important;
+}
+
+.warm-theme [class*="text-white"],
+.warm-theme [class*="text-slate-100"],
+.warm-theme [class*="text-slate-200"],
+.warm-theme [class*="text-slate-300"] {
+  color: #f2e7d2 !important;
+}
+
+.warm-theme [class*="text-slate-400"],
+.warm-theme [class*="text-slate-500"],
+.warm-theme [class*="text-slate-600"] {
+  color: #c3ae91 !important;
+}
+
+.warm-theme [class*="border-cyan-"],
+.warm-theme [class*="border-pink-"],
+.warm-theme [class*="border-purple-"],
+.warm-theme [class*="border-amber-"],
+.warm-theme [class*="border-red-"] {
+  border-color: rgba(202, 157, 96, 0.35) !important;
+}
+
+.warm-theme [class*="border-slate-"],
+.warm-theme [class*="border-white/"] {
+  border-color: rgba(226, 205, 171, 0.16) !important;
+}
+
+.warm-theme [class*="bg-cyan-"],
+.warm-theme [class*="bg-pink-"],
+.warm-theme [class*="bg-purple-"],
+.warm-theme [class*="bg-amber-"],
+.warm-theme [class*="bg-red-"] {
+  background-color: rgba(184, 113, 66, 0.16) !important;
+}
+
+.warm-theme [class*="bg-cyan-300"],
+.warm-theme [class*="bg-amber-200"] {
+  background-color: #e2b56c !important;
+  color: #302016 !important;
+}
+
+.warm-theme [class*="bg-slate-"] {
+  background-color: rgba(73, 53, 39, 0.72) !important;
+}
+
+.warm-theme [class*="from-pink-"],
+.warm-theme [class*="via-purple-"],
+.warm-theme [class*="to-cyan-"] {
+  --tw-gradient-from: #b86f3e var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #c58f4b var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #d7a866 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.warm-theme [class*="from-[#0d1633]"] {
+  --tw-gradient-from: #704833 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #3a2822 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #57352b var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.warm-theme [class*="shadow-[0_0_"] {
+  box-shadow: 0 8px 24px rgba(20, 12, 8, 0.2) !important;
+}
+
+.warm-theme .warm-texture {
+  background-image: radial-gradient(rgba(217, 171, 106, 0.035) 0.6px, transparent 0.6px);
+}
+
+.warm-theme .scanlines-overlay {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

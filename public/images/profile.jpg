@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1226" />
+      <stop offset="50%" stop-color="#120e28" />
+      <stop offset="100%" stop-color="#050711" />
+    </linearGradient>
+    <filter id="avatarCyan">
+      <feGaussianBlur stdDeviation="8" result="b" />
+      <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="avatarPink">
+      <feGaussianBlur stdDeviation="10" result="b" />
+      <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" rx="24" fill="url(#avatarGrad)" />
+  <!-- Hexagon Pattern -->
+  <polygon points="300,40 520,167 520,433 300,560 80,433 80,167" fill="none" stroke="#00f0ff" stroke-width="3" filter="url(#avatarCyan)" />
+  <polygon points="300,60 500,178 500,422 300,540 100,422 100,178" fill="none" stroke="#ff2e97" stroke-width="2" opacity="0.6" filter="url(#avatarPink)" />
+
+  <!-- Cybernetic Silhouette / Stylized Portrait -->
+  <g transform="translate(150, 110)">
+    <!-- Cyber Headset & Visor -->
+    <ellipse cx="150" cy="160" rx="95" ry="120" fill="#131c33" stroke="#00f0ff" stroke-width="2" />
+    <!-- Visor -->
+    <path d="M 75 140 Q 150 170 225 140 L 220 185 Q 150 215 80 185 Z" fill="#ff2e97" filter="url(#avatarPink)" opacity="0.9" />
+    <!-- Visor Glitch Lines -->
+    <line x1="85" y1="162" x2="215" y2="162" stroke="#ffffff" stroke-width="2" />
+    <!-- Tactical Collar / Shoulders -->
+    <path d="M 40 320 L 80 250 L 220 250 L 260 320 Z" fill="#0d1528" stroke="#00f0ff" stroke-width="2" />
+    <!-- Audio Comm Piece -->
+    <circle cx="58" cy="165" r="16" fill="#ff2e97" filter="url(#avatarPink)" />
+    <circle cx="242" cy="165" r="16" fill="#00f0ff" filter="url(#avatarCyan)" />
+    <line x1="58" y1="165" x2="110" y2="200" stroke="#00f0ff" stroke-width="3" />
+  </g>
+
+  <!-- Shanghai Glyph Overlay -->
+  <text x="300" y="500" fill="#00f0ff" font-family="'Orbitron', monospace" font-size="20" font-weight="bold" text-anchor="middle" letter-spacing="4">SHARANYA HP</text>
+  <text x="300" y="525" fill="#ff2e97" font-family="monospace" font-size="12" text-anchor="middle" letter-spacing="2">RED TEAM // BLACK TEAM // BIT B.TECH</text>
+</svg>

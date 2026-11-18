@@ -1,0 +1,59 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+**/node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+**/.next/
+**/.next - Copy/
+**/.next - Copy (2)/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# Exclude duplicate copies and generated caches left in the source workspace
+/.next - Copy/
+/.next - Copy (2)/
+/scripts - Copy/
+/scripts - Copy (2)/
+/eslint.config - Copy.mjs
+/netlify - Copy.toml
+/package-lock - Copy.json
+/page - Copy - Copy.tsx
+/page - Copy.tsx
+/README - Copy.md
+/run-dev - Copy.bat
+/tsconfig - Copy.json
+next-env.d.ts
